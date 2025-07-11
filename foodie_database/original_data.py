@@ -5,9 +5,8 @@ from datetime import datetime
 
 # Registered users and their details
 users_db = {
-    "oladoyin": {
+    "user_01": {
         "customer_id": 1,
-        "name": "Oladoyin",
         "wallet_balance": 26005.00,
         "last_orders": [
             {"food": ["Jollof Rice", "Chicken", "Plantain"], "date": "2025-07-10", "time": "13:45"},
@@ -18,9 +17,8 @@ users_db = {
             {"food": ["Chapman"], "date": "2025-07-05", "time": "10:00"},
         ]
     },
-    "daniel": {
+    "user_02": {
         "customer_id": 2,
-        "name": "Daniel",
         "wallet_balance": 3700.00,
         "last_orders": [
             {"food": ["Ofada Rice/Sauce", "Boiled Egg", "Palmwine"], "date": "2025-07-09", "time": "12:10"},
@@ -29,22 +27,20 @@ users_db = {
             {"food": ["White Rice", "Moi Moi", "Fried Potatoes"], "date": "2025-07-02", "time": "17:40"},
         ]
     },
-    "frankfelix": {
+    "user_03": {
         "customer_id": 3,
-        "name": "FrankFelix",
         "wallet_balance": 13904.00,
         "last_orders": [
             {"food": ["Spaghetti Jollof", "Egg Sauce"], "date": "2025-07-10", "time": "19:10"},
-            {"food": ["Yam Porridge", "Fried Plantain"], "date": "2025-07-08", "time": "13:10"},
+            {"food": ["Yam Porridge", "Fried Plantain"], "date": "2025-07-09", "time": "19:10"},
             {"food": ["Ewa Agoyin", "Chicken (Small)", "Zobo Drink"], "date": "2025-07-06", "time": "09:50"},
             {"food": ["Semovita", "Ogbono", "Ponmo"], "date": "2025-07-05", "time": "14:30"},
             {"food": ["Fruit Salad", "Puff Puff"], "date": "2025-07-04", "time": "10:20"},
             {"food": ["Boiled Yam", "Catfish Pepper Soup"], "date": "2025-07-03", "time": "18:30"},
         ]
     },
-    "y.k": {
+    "user_04": {
         "customer_id": 4,
-        "name": "Y.K",
         "wallet_balance": 18003.00,
         "last_orders": [
             {"food": ["Eba", "Edikaikong", "Cow Leg"], "date": "2025-07-10", "time": "13:15"},
@@ -52,23 +48,21 @@ users_db = {
             {"food": ["Boiled Plantain", "Egg Sauce", "Shrimps"], "date": "2025-07-08", "time": "20:00"},
         ]
     },
-    "blessing": {
+    "user_05": {
         "customer_id": 5,
-        "name": "Blessing",
-        "wallet_balance": 35700.00,
+        "wallet_balance": 35700.70,
         "last_orders": [
             {"food": ["Fried Rice", "Moi Moi", "Croaker Fish"], "date": "2025-07-10", "time": "14:00"},
             {"food": ["Semovita", "Seafood Okro"], "date": "2025-07-09", "time": "15:40"},
             {"food": ["Akara", "Cooked Pap"], "date": "2025-07-08", "time": "07:30"},
-            {"food": ["Gizz Dodo", "Boiled Yam", "Zobo Drink"], "date": "2025-07-07", "time": "12:10"},
+            {"food": ["Dodo Gizzard", "Boiled Yam", "Zobo Drink"], "date": "2025-07-07", "time": "12:10"},
             {"food": ["Palmwine"], "date": "2025-07-06", "time": "18:20"},
             {"food": ["Ogbono", "Goat Meat", "Water"], "date": "2025-07-05", "time": "14:50"},
             {"food": ["Catfish Pepper Soup", "Pounded Yam"], "date": "2025-07-04", "time": "20:10"},
         ]
     },
-    "crystal": {
+    "user_06": {
         "customer_id": 6,
-        "name": "Crystal",
         "wallet_balance": 7910.00,
         "last_orders": [
             {"food": ["Fruit Salad", "Milk Shake"], "date": "2025-07-10", "time": "11:45"},
@@ -173,5 +167,140 @@ menu_db = {
     "settings": {
         "takeaway_pack_price": 500,
         "vat_percentage": 7.5
+    }
+}
+
+
+branches_db = {
+    "ikorodu": {
+        "location": "Ikorodu",
+        "available_tables": {
+            "table_for_2": {"number": 4, "unit_price": 6800},
+            "table_for_5": {"number": 2, "unit_price": 10350},
+            "vip": {"number": 1, "unit_price": 15800}
+        },
+        "specials": [
+            {"day": "Monday", "food": ["Ofada Rice/Sauce", "Pepper Soup"], "discount": 10},
+            {"day": "Wednesday", "food": ["Yam Porridge", "Turkey (Big)"], "discount": 12},
+            {"day": "Friday", "food": ["Jollof Rice", "Croaker Fish"], "discount": 15}
+        ],
+        "opening_hours": {
+            "weekday": "08:00 - 21:00",
+            "weekend": "09:00 - 22:00"
+        },
+        "contact_number": "+234-701-234-5678",
+        "delivery_available": True,
+        "rating": 4.2,
+        "manager": "Mrs. Adebayo"
+    },
+
+    "ikeja": {
+        "location": "Ikeja",
+        "available_tables": {
+            "table_for_2": {"number": 6, "unit_price": 7600},
+            "table_for_5": {"number": 4, "unit_price": 12300},
+            "vip": {"number": 3, "unit_price": 18500}
+        },
+        "specials": [
+            {"day": "Tuesday", "food": ["Pounded Yam", "Egusi", "Goat Meat"], "discount": 13},
+            {"day": "Thursday", "food": ["Fried Rice", "Shrimps"], "discount": 10},
+            {"day": "Saturday", "food": ["Spaghetti Jollof", "Turkey (Small)"], "discount": 12}
+        ],
+        "opening_hours": {
+            "weekday": "08:00 - 21:00",
+            "weekend": "09:00 - 22:00"
+        },
+        "contact_number": "+234-802-987-6543",
+        "delivery_available": True,
+        "rating": 4.7,
+        "manager": "Mr. Okoro"
+    },
+
+    "epe": {
+        "location": "Epe",
+        "available_tables": {
+            "table_for_2": {"number": 3, "unit_price": 6000},
+            "table_for_5": {"number": 2, "unit_price": 12800},
+            "vip": {"number": 1, "unit_price": 16500}
+        },
+        "specials": [
+            {"day": "Monday", "food": ["Boiled Yam", "Efo Riro"], "discount": 8},
+            {"day": "Wednesday", "food": ["White Rice", "Fish Sauce"], "discount": 10},
+            {"day": "Sunday", "food": ["Catfish Pepper Soup", "Akara"], "discount": 12}
+        ],
+        "opening_hours": {
+            "weekday": "09:00 - 20:00",
+            "weekend": "10:00 - 22:00"
+        },
+        "contact_number": "+234-909-111-2222",
+        "delivery_available": False,
+        "rating": 4.0,
+        "manager": "Mrs. Fatima"
+    },
+
+    "badagry": {
+        "location": "Badagry",
+        "available_tables": {
+            "table_for_3": {"number": 5, "unit_price": 4700},
+            "table_for_8": {"number": 3, "unit_price": 9300},
+            "vip": {"number": 2, "unit_price": 14800}
+        },
+        "specials": [
+            {"day": "Tuesday", "food": ["Ewa Agoyin", "Fried Plantain"], "discount": 10},
+            {"day": "Thursday", "food": ["Village Rice", "Titus"], "discount": 14},
+            {"day": "Saturday", "food": ["Farm House Porridge", "Palmwine"], "discount": 11}
+        ],
+        "opening_hours": {
+            "weekday": "08:00 - 20:00",
+            "weekend": "09:00 - 21:00"
+        },
+        "contact_number": "+234-703-333-4444",
+        "delivery_available": True,
+        "rating": 4.3,
+        "manager": "Mr. Danjuma"
+    },
+
+    "victoria_island": {
+        "location": "Victoria Island",
+        "available_tables": {
+            "table_for_2": {"number": 7, "unit_price": 7500},
+            "table_for_4": {"number": 5, "unit_price": 13800},
+            "vip": {"number": 4, "unit_price": 20000}
+        },
+        "specials": [
+            {"day": "Wednesday", "food": ["Special Fried Rice", "Prawns"], "discount": 13},
+            {"day": "Friday", "food": ["Ofada Sauce", "Boiled Plantain"], "discount": 12},
+            {"day": "Sunday", "food": ["Seafood Okro", "Chapman"], "discount": 15}
+        ],
+        "opening_hours": {
+            "weekday": "08:00 - 22:00",
+            "weekend": "09:00 - 23:00"
+        },
+        "contact_number": "+234-805-999-8888",
+        "delivery_available": True,
+        "rating": 4.8,
+        "manager": "Ms. Uduak"
+    },
+
+    "yaba": {
+        "location": "Yaba",
+        "available_tables": {
+            "table_for_3": {"number": 4, "unit_price": 6000},
+            "table_for_5": {"number": 2, "unit_price": 10300},
+            "vip": {"number": 1, "unit_price": 15000}
+        },
+        "specials": [
+            {"day": "Monday", "food": ["Beans Porridge", "Ponmo"], "discount": 9},
+            {"day": "Thursday", "food": ["Amala", "Gbegiri", "Ewedu"], "discount": 13},
+            {"day": "Saturday", "food": ["White Soup", "Goat Meat"], "discount": 14}
+        ],
+        "opening_hours": {
+            "weekday": "08:00 - 21:00",
+            "weekend": "09:00 - 22:00"
+        },
+        "contact_number": "+234-814-456-1234",
+        "delivery_available": True,
+        "rating": 4.4,
+        "manager": "Mr. Tunde"
     }
 }

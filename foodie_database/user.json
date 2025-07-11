@@ -1,0 +1,42 @@
+{
+    "customer_id": 2,
+    "wallet_balance": 3700.0,
+    "last_orders": [
+        {
+            "food": [
+                "Ofada Rice/Sauce",
+                "Boiled Egg",
+                "Palmwine"
+            ],
+            "date": "2025-07-09",
+            "time": "12:10"
+        },
+        {
+            "food": [
+                "Ofada Rice/Sauce",
+                "Boiled Egg"
+            ],
+            "date": "2025-07-06",
+            "time": "12:50"
+        },
+        {
+            "food": [
+                "Amala",
+                "Ewedu",
+                "Gbegiri",
+                "Assorted"
+            ],
+            "date": "2025-07-05",
+            "time": "14:00"
+        },
+        {
+            "food": [
+                "White Rice",
+                "Moi Moi",
+                "Fried Potatoes"
+            ],
+            "date": "2025-07-02",
+            "time": "17:40"
+        }
+    ]
+}
